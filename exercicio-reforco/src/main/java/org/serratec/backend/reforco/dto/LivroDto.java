@@ -1,5 +1,8 @@
 package org.serratec.backend.reforco.dto;
 
+import java.util.List;
+import java.util.stream.Collectors;
+
 import org.serratec.backend.reforco.model.Livro;
 
 public class LivroDto {
@@ -33,6 +36,10 @@ public class LivroDto {
 
 	public String getAutor() {
 		return autor;
+	}
+
+	public static List<LivroDto> converter(List<Livro> livros) {
+		return livros.stream().map(LivroDto::new).collect(Collectors.toList());
 	}
 
 }
