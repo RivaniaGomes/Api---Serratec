@@ -1,0 +1,63 @@
+{
+	"folders": {},
+	"connections": {
+		"postgres-jdbc-183d937b498-d795cbf4fbb2ea6": {
+			"provider": "postgresql",
+			"driver": "postgres-jdbc",
+			"name": "projeto",
+			"save-password": true,
+			"read-only": false,
+			"configuration": {
+				"host": "localhost",
+				"port": "5432",
+				"database": "projeto",
+				"url": "jdbc:postgresql://localhost:5432/projeto",
+				"configurationType": "MANUAL",
+				"home": "postgresql-x64-14",
+				"type": "dev",
+				"properties": {
+					"connectTimeout": "20",
+					"loginTimeout": "20"
+				},
+				"provider-properties": {
+					"@dbeaver-show-non-default-db@": "false",
+					"@dbeaver-show-template-db@": "false",
+					"@dbeaver-show-unavailable-db@": "false",
+					"show-database-statistics": "false",
+					"@dbeaver-read-all-data-types-db@": "false",
+					"read-keys-with-columns": "false",
+					"@dbeaver-use-prepared-statements-db@": "false",
+					"postgresql.dd.plain.string": "false",
+					"postgresql.dd.tag.string": "false"
+				},
+				"auth-model": "native"
+			}
+		}
+	},
+	"virtual-models": {
+		"postgres-jdbc-183d937b498-d795cbf4fbb2ea6": {
+			"projeto": {
+				"public": {
+					":categoria": {
+						"properties": {
+							"erd.diagram.state": {
+								"serialized": "<diagram version=\"1\" name=\"empty\" time=\"202210151532\"><entities><data-source id=\"postgres-jdbc-183d937b498-d795cbf4fbb2ea6\"><entity id=\"1\" name=\"categoria\" fq-name=\"public.categoria\" order=\"0\" color-bg=\"124,62,31\" border-width=\"3\" x=\"401\" y=\"108\"><path name=\"public\"/><path name=\"projeto\"/></entity><entity id=\"2\" name=\"livro\" fq-name=\"public.livro\" order=\"1\" x=\"20\" y=\"20\"><path name=\"public\"/><path name=\"projeto\"/></entity></data-source></entities><relations><relation name=\"fkb7mxrv701l3ctr1sd119uhcig\" fq-name=\"public.livro.fkb7mxrv701l3ctr1sd119uhcig\" type=\"fk\" pk-ref=\"1\" fk-ref=\"2\"/></relations></diagram>"
+							}
+						}
+					}
+				}
+			}
+		}
+	},
+	"connection-types": {
+		"dev": {
+			"name": "Development",
+			"color": "255,255,255",
+			"description": "Regular development database",
+			"auto-commit": true,
+			"confirm-execute": false,
+			"confirm-data-change": false,
+			"auto-close-transactions": false
+		}
+	}
+}
